@@ -37,7 +37,7 @@
 <!-- <h3 align="center">Overview:</h3> -->
 
 
-<summary><h2><strong>Github Stats<strong></h2> 👩‍💻</summary>
+<h2 align="center"><strong>Github Stats:<strong></h2>
   
 <div align="center">
 <a align="left" ><img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=c-onfused69&show_icons=true&locale=en&layout=compact&theme=radical&hide_border=true" alt="c-onfused69-mul" /></a>

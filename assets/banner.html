@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GitHub Profile Banner — Nahijul Islam Niloy</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Geist+Mono:wght@400;500&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      width: 1500px;
+      height: 500px;
+      background: #0D1117;
+      font-family: 'Outfit', system-ui, sans-serif;
+      overflow: hidden;
+    }
+
+    .canvas {
+      width: 1500px;
+      height: 500px;
+      position: relative;
+      background: linear-gradient(135deg, #0D1117 0%, #0F172A 60%, #0A0F1E 100%);
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* Mesh gradient glow — left center */
+    .glow-orb-1 {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(ellipse at center, rgba(34,197,94,0.12) 0%, rgba(34,197,94,0.04) 50%, transparent 75%);
+      left: -80px;
+      top: 0;
+      pointer-events: none;
+    }
+
+    /* Secondary glow — mid right */
+    .glow-orb-2 {
+      position: absolute;
+      width: 600px;
+      height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(ellipse at center, rgba(88,166,255,0.08) 0%, rgba(88,166,255,0.02) 50%, transparent 75%);
+      right: 50px;
+      top: 50px;
+      pointer-events: none;
+    }
+
+    /* Left content zone */
+    .left-zone {
+      position: relative;
+      z-index: 10;
+      padding: 0 0 0 80px;
+      width: 700px;
+      flex-shrink: 0;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .eyebrow-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #22C55E;
+      box-shadow: 0 0 8px rgba(34, 197, 94, 0.8);
+    }
+
+    .eyebrow-text {
+      font-family: 'Geist Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #22C55E;
+      font-weight: 500;
+    }
+
+    .name {
+      font-size: 62px;
+      font-weight: 800;
+      color: #F0F6FC;
+      letter-spacing: -0.03em;
+      line-height: 1.0;
+      margin-bottom: 8px;
+    }
+
+    .name-accent {
+      color: #22C55E;
+    }
+
+    .tagline {
+      font-size: 15px;
+      font-weight: 400;
+      color: #8B949E;
+      letter-spacing: 0.02em;
+      margin-bottom: 28px;
+      font-family: 'Geist Mono', monospace;
+    }
+
+    .roles {
+      display: flex;
+      gap: 10px;
+      flex-wrap: nowrap;
+    }
+
+    .role-badge {
+      padding: 7px 16px;
+      border-radius: 100px;
+      font-size: 12.5px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      border: 1px solid;
+    }
+
+    .role-ai {
+      background: rgba(34, 197, 94, 0.1);
+      border-color: rgba(34, 197, 94, 0.4);
+      color: #4ADE80;
+    }
+
+    .role-web {
+      background: rgba(88, 166, 255, 0.1);
+      border-color: rgba(88, 166, 255, 0.35);
+      color: #7CB9FF;
+    }
+
+    .role-data {
+      background: rgba(251, 191, 36, 0.08);
+      border-color: rgba(251, 191, 36, 0.3);
+      color: #FCD34D;
+    }
+
+    /* Right zone — neural network SVG */
+    .right-zone {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 800px;
+      height: 500px;
+      z-index: 5;
+    }
+
+    .right-zone svg {
+      width: 100%;
+      height: 100%;
+      opacity: 0.65;
+    }
+
+    /* Bottom hairline accent */
+    .bottom-accent {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent 0%, #22C55E 30%, #58A6FF 70%, transparent 100%);
+      opacity: 0.5;
+    }
+
+    /* Top hairline */
+    .top-accent {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0%, rgba(34,197,94,0.3) 40%, transparent 100%);
+    }
+
+    /* Left vertical accent */
+    .left-accent {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: linear-gradient(180deg, transparent, #22C55E 30%, #22C55E 70%, transparent);
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="glow-orb-1"></div>
+    <div class="glow-orb-2"></div>
+    <div class="top-accent"></div>
+    <div class="left-accent"></div>
+
+    <!-- Left content -->
+    <div class="left-zone">
+      <div class="eyebrow">
+        <div class="eyebrow-dot"></div>
+        <span class="eyebrow-text">Portfolio &amp; Profile</span>
+      </div>
+      <h1 class="name">Nahijul<br><span class="name-accent">Islam Niloy</span></h1>
+      <p class="tagline">Building intelligence. Shipping products. Revealing insights.</p>
+      <div class="roles">
+        <span class="role-badge role-ai">AI Engineer</span>
+        <span class="role-badge role-web">Web Developer</span>
+        <span class="role-badge role-data">Data Analyst</span>
+      </div>
+    </div>
+
+    <!-- Right zone — neural network visualization -->
+    <div class="right-zone">
+      <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <defs>
+          <radialGradient id="nodeGlow1" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#22C55E" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#22C55E" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="nodeGlow2" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#58A6FF" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#58A6FF" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="nodeGlow3" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.8"/>
+            <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+          </radialGradient>
+          <filter id="blur-glow">
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+          </filter>
+        </defs>
+
+        <!-- Connection lines — emerald -->
+        <line x1="120" y1="80" x2="280" y2="160" stroke="#22C55E" stroke-width="0.8" stroke-opacity="0.35"/>
+        <line x1="280" y1="160" x2="450" y2="100" stroke="#22C55E" stroke-width="0.8" stroke-opacity="0.35"/>
+        <line x1="450" y1="100" x2="600" y2="200" stroke="#58A6FF" stroke-width="0.8" stroke-opacity="0.3"/>
+        <line x1="280" y1="160" x2="350" y2="300" stroke="#22C55E" stroke-width="0.8" stroke-opacity="0.3"/>
+        <line x1="350" y1="300" x2="500" y2="380" stroke="#58A6FF" stroke-width="0.8" stroke-opacity="0.3"/>
+        <line x1="500" y1="380" x2="650" y2="320" stroke="#22C55E" stroke-width="0.7" stroke-opacity="0.25"/>
+        <line x1="600" y1="200" x2="720" y2="140" stroke="#58A6FF" stroke-width="0.8" stroke-opacity="0.3"/>
+        <line x1="600" y1="200" x2="650" y2="320" stroke="#58A6FF" stroke-width="0.7" stroke-opacity="0.25"/>
+        <line x1="450" y1="100" x2="350" y2="300" stroke="#A78BFA" stroke-width="0.7" stroke-opacity="0.2"/>
+        <line x1="120" y1="80" x2="350" y2="300" stroke="#22C55E" stroke-width="0.5" stroke-opacity="0.15"/>
+        <line x1="720" y1="140" x2="780" y2="280" stroke="#58A6FF" stroke-width="0.7" stroke-opacity="0.25"/>
+        <line x1="650" y1="320" x2="760" y2="420" stroke="#22C55E" stroke-width="0.6" stroke-opacity="0.2"/>
+        <line x1="180" y1="380" x2="350" y2="300" stroke="#58A6FF" stroke-width="0.7" stroke-opacity="0.25"/>
+        <line x1="180" y1="380" x2="500" y2="380" stroke="#A78BFA" stroke-width="0.6" stroke-opacity="0.18"/>
+        <line x1="60" y1="250" x2="180" y2="380" stroke="#22C55E" stroke-width="0.6" stroke-opacity="0.2"/>
+        <line x1="60" y1="250" x2="280" y2="160" stroke="#22C55E" stroke-width="0.6" stroke-opacity="0.2"/>
+
+        <!-- Additional web lines -->
+        <line x1="720" y1="140" x2="650" y2="320" stroke="#A78BFA" stroke-width="0.5" stroke-opacity="0.15"/>
+        <line x1="500" y1="380" x2="760" y2="420" stroke="#58A6FF" stroke-width="0.5" stroke-opacity="0.15"/>
+
+        <!-- Glow halos for large nodes -->
+        <circle cx="280" cy="160" r="30" fill="url(#nodeGlow1)" opacity="0.4"/>
+        <circle cx="600" cy="200" r="25" fill="url(#nodeGlow2)" opacity="0.35"/>
+        <circle cx="450" cy="100" r="22" fill="url(#nodeGlow1)" opacity="0.3"/>
+        <circle cx="350" cy="300" r="28" fill="url(#nodeGlow3)" opacity="0.3"/>
+
+        <!-- Primary nodes — emerald -->
+        <circle cx="280" cy="160" r="6" fill="#22C55E" filter="url(#blur-glow)"/>
+        <circle cx="280" cy="160" r="3.5" fill="#4ADE80"/>
+        <circle cx="450" cy="100" r="5" fill="#22C55E" filter="url(#blur-glow)"/>
+        <circle cx="450" cy="100" r="3" fill="#4ADE80"/>
+        <circle cx="350" cy="300" r="5.5" fill="#22C55E" filter="url(#blur-glow)"/>
+        <circle cx="350" cy="300" r="3" fill="#4ADE80"/>
+        <circle cx="500" cy="380" r="4.5" fill="#22C55E" filter="url(#blur-glow)"/>
+        <circle cx="500" cy="380" r="2.5" fill="#4ADE80"/>
+        <circle cx="180" cy="380" r="4" fill="#22C55E"/>
+        <circle cx="60" cy="250" r="3.5" fill="#22C55E" opacity="0.7"/>
+
+        <!-- Primary nodes — cyan -->
+        <circle cx="600" cy="200" r="5.5" fill="#58A6FF" filter="url(#blur-glow)"/>
+        <circle cx="600" cy="200" r="3" fill="#7CB9FF"/>
+        <circle cx="720" cy="140" r="5" fill="#58A6FF" filter="url(#blur-glow)"/>
+        <circle cx="720" cy="140" r="2.8" fill="#7CB9FF"/>
+        <circle cx="650" cy="320" r="5" fill="#58A6FF" filter="url(#blur-glow)"/>
+        <circle cx="650" cy="320" r="2.8" fill="#7CB9FF"/>
+        <circle cx="780" cy="280" r="4" fill="#58A6FF" opacity="0.8"/>
+        <circle cx="760" cy="420" r="3.5" fill="#58A6FF" opacity="0.6"/>
+
+        <!-- Small accent nodes -->
+        <circle cx="120" cy="80" r="3.5" fill="#22C55E" opacity="0.8"/>
+        <circle cx="160" cy="220" r="2.5" fill="#A78BFA" opacity="0.7"/>
+        <circle cx="400" cy="450" r="3" fill="#58A6FF" opacity="0.5"/>
+        <circle cx="700" cy="60" r="2.5" fill="#22C55E" opacity="0.5"/>
+        <circle cx="770" cy="380" r="3" fill="#A78BFA" opacity="0.5"/>
+
+        <!-- Tiny scattered nodes -->
+        <circle cx="200" cy="50" r="1.5" fill="#22C55E" opacity="0.4"/>
+        <circle cx="540" cy="240" r="1.5" fill="#58A6FF" opacity="0.4"/>
+        <circle cx="680" cy="460" r="1.5" fill="#22C55E" opacity="0.3"/>
+        <circle cx="750" cy="200" r="1.5" fill="#A78BFA" opacity="0.35"/>
+      </svg>
+    </div>
+
+    <div class="bottom-accent"></div>
+  </div>
+</body>
+</html>

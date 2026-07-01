@@ -116,26 +116,38 @@ class NahijulIslamNiloy:
 
 <div align="center">
 
-<!-- Row 1: Profile Details + Top Languages -->
+<!-- Row 1: Profile Details + Top Languages by Repos -->
 <table>
   <tr>
     <td width="55%" align="center">
       <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=c-onfused69&theme=github_dark" alt="Profile Details"/>
     </td>
     <td width="45%" align="center">
-      <img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=c-onfused69&langs_count=8&layout=compact&hide_border=true&bg_color=0D1117&title_color=22C55E&text_color=8B949E&icon_color=58A6FF&cache_seconds=1800" alt="Top Languages"/>
+      <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=c-onfused69&theme=github_dark" alt="Top Languages by Repo"/>
     </td>
   </tr>
 </table>
 
-<!-- Row 2: Streak + GitHub Stats (side by side) -->
+<!-- Row 2: Streak + GitHub Stats -->
 <table>
   <tr>
     <td width="50%" align="center">
       <img width="100%" src="https://streak-stats.demolab.com/?user=c-onfused69&theme=dark&hide_border=true&background=0D1117&ring=22C55E&fire=58A6FF&sideNums=F0F6FC&sideLabels=8B949E&dates=8B949E&currStreakNum=22C55E&currStreakLabel=22C55E&stroke=21262D" alt="GitHub Streak"/>
     </td>
     <td width="50%" align="center">
-      <img width="100%" src="https://github-readme-stats.vercel.app/api?username=c-onfused69&show_icons=true&hide_border=true&bg_color=0D1117&title_color=22C55E&icon_color=58A6FF&text_color=8B949E&rank_icon=github&count_private=true&cache_seconds=1800" alt="GitHub Stats"/>
+      <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=c-onfused69&theme=github_dark" alt="GitHub Stats"/>
+    </td>
+  </tr>
+</table>
+
+<!-- Row 3: Most Commit Language -->
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=c-onfused69&theme=github_dark" alt="Most Used Languages by Commit"/>
+    </td>
+    <td width="50%" align="center">
+      <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=c-onfused69&theme=github_dark&utcOffset=6" alt="Productive Time (UTC+6)"/>
     </td>
   </tr>
 </table>

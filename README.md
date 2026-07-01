@@ -37,25 +37,41 @@
 ```python
 class NahijulIslamNiloy:
 
-    def __init__(self):
-        self.name       = "Nahijul Islam Niloy"
-        self.location   = "Bangladesh 🇧🇩"
-        self.roles      = ["AI Engineer", "Web Developer", "Data Analyst"]
-        self.languages  = ["Python", "JavaScript", "SQL", "C++"]
-        self.focus      = "Building intelligent systems that turn raw data into real impact"
+    # ─── Identity ────────────────────────────────────────────────────────────
+    name        = "Nahijul Islam Niloy"
+    location    = "Dhaka, Bangladesh 🇧🇩"
+    pronouns    = "He / Him"
+    roles       = ["AI Engineer", "Web Developer", "Data Analyst"]
+    open_to     = ["Collaborations", "Freelance", "Full-time Opportunities"]
 
-    def current_work(self):
-        return {
-            "building"  : "LLM-powered applications & AI pipelines",
-            "crafting"  : "Full-stack web experiences with modern frameworks",
-            "analyzing" : "Data-driven insights and interactive dashboards",
-        }
+    # ─── Tech Arsenal ────────────────────────────────────────────────────────
+    languages   = ["Python", "JavaScript", "SQL", "C", "C++", "Java"]
+    ai_stack    = ["LangChain", "HuggingFace", "OpenAI API", "scikit-learn",
+                   "TensorFlow", "PyTorch", "FastAPI"]
+    web_stack   = ["React", "Vue.js", "Node.js", "HTML5", "CSS3", "Sass"]
+    data_stack  = ["pandas", "NumPy", "Matplotlib", "Power BI", "SQL", "Jupyter"]
+    devops      = ["Docker", "Azure", "GCP", "Git", "Linux", "Figma"]
 
-    def connect(self):
-        return "Open to collaborating on AI, full-stack, or data projects"
+    # ─── Current Focus ───────────────────────────────────────────────────────
+    building    = "LLM-powered apps with RAG pipelines & AI agents"
+    crafting    = "Full-stack web experiences with modern JS frameworks"
+    analyzing   = "Data-driven insights through interactive dashboards"
+    learning    = "Multi-agent systems · Vector DBs · Cloud-native AI"
 
-me = NahijulIslamNiloy()
+    # ─── Fun Facts ───────────────────────────────────────────────────────────
+    hobbies     = ["Anime", "Problem Solving", "Open Source"]
+    anime       = ["Fullmetal Alchemist", "Attack on Titan",
+                   "Hunter x Hunter", "Mob Psycho 100"]
+    motto       = "Turn data into decisions. Turn ideas into products."
 ```
+
+<div align="center">
+
+| 🤖 AI & ML | 🌐 Web Dev | 📊 Data | ☁️ DevOps |
+|:-----------:|:----------:|:-------:|:---------:|
+| LLMs · RAG · Agents | React · Vue · Node | pandas · Power BI | Docker · Azure · GCP |
+
+</div>
 
 ---
 
@@ -100,21 +116,26 @@ me = NahijulIslamNiloy()
 
 <div align="center">
 
+<!-- Row 1: Profile Details + Top Languages -->
 <table>
   <tr>
-    <td width="55%">
-      <img width="100%" src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=c-onfused69&theme=2077" alt="Profile Details"/>
+    <td width="55%" align="center">
+      <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=c-onfused69&theme=github_dark" alt="Profile Details"/>
     </td>
-    <td width="45%">
-      <img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=c-onfused69&layout=compact&theme=github_dark_dimmed&hide_border=true&bg_color=0d1117&title_color=22c55e&text_color=8b949e&border_color=21262d" alt="Top Languages"/>
+    <td width="45%" align="center">
+      <img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=c-onfused69&langs_count=8&layout=compact&hide_border=true&bg_color=0D1117&title_color=22C55E&text_color=8B949E&icon_color=58A6FF&cache_seconds=1800" alt="Top Languages"/>
     </td>
   </tr>
+</table>
+
+<!-- Row 2: Streak + GitHub Stats (side by side) -->
+<table>
   <tr>
-    <td width="55%">
-      <img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=c-onfused69&theme=github-dark-blue&hide_border=true&background=0D1117&ring=22C55E&fire=58A6FF&sideNums=F0F6FC&sideLabels=8B949E&dates=8B949E&currStreakNum=22C55E&currStreakLabel=22C55E" alt="GitHub Streak"/>
+    <td width="50%" align="center">
+      <img width="100%" src="https://streak-stats.demolab.com/?user=c-onfused69&theme=dark&hide_border=true&background=0D1117&ring=22C55E&fire=58A6FF&sideNums=F0F6FC&sideLabels=8B949E&dates=8B949E&currStreakNum=22C55E&currStreakLabel=22C55E&stroke=21262D" alt="GitHub Streak"/>
     </td>
-    <td width="45%">
-      <img width="100%" src="https://github-readme-stats.vercel.app/api?username=c-onfused69&show_icons=true&theme=github_dark_dimmed&hide_border=true&bg_color=0d1117&title_color=22c55e&icon_color=58a6ff&text_color=8b949e&border_color=21262d&count_private=true" alt="GitHub Stats"/>
+    <td width="50%" align="center">
+      <img width="100%" src="https://github-readme-stats.vercel.app/api?username=c-onfused69&show_icons=true&hide_border=true&bg_color=0D1117&title_color=22C55E&icon_color=58A6FF&text_color=8B949E&rank_icon=github&count_private=true&cache_seconds=1800" alt="GitHub Stats"/>
     </td>
   </tr>
 </table>
@@ -152,11 +173,17 @@ me = NahijulIslamNiloy()
 
 ## Contribution Activity
 
+<!-- Activity Graph: shows Month · Day · Year on X-axis -->
+<div align="center">
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=c-onfused69&bg_color=0D1117&color=22C55E&line=58A6FF&point=F0F6FC&area=true&area_color=22C55E&hide_border=true&custom_title=Contribution%20Timeline%20%E2%80%94%20Month%20%2F%20Day%20%2F%20Year" alt="Contribution Activity Graph — Month/Day/Year"/>
+</div>
+
+<!-- Snake animation: per-day cell heatmap -->
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/c-onfused69/c-onfused69/output/github-contribution-grid-snake-dark.svg"/>
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/c-onfused69/c-onfused69/output/github-contribution-grid-snake.svg"/>
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/c-onfused69/c-onfused69/output/github-contribution-grid-snake-dark.svg"/>
+    <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/c-onfused69/c-onfused69/output/github-contribution-grid-snake-dark.svg"/>
   </picture>
 </div>
 
